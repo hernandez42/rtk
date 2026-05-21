@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Read|Bash|Grep|Glob|WebFetch|WebSearch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"/path/to/rtk.py\""
+          }
+        ]
+      }
+    ]
+  }
+}
